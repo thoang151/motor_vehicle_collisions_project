@@ -8,9 +8,9 @@ There are many various groups that will be able to utilize our created database 
 
 # Potential Entities/Tables:
 **Data that identifies the crash. This will be our main table which will help keep track of information about a specific crash together.**\
-crash_id (Crash ID number)
-crash_date (The day that the crash occurred)
-crash_time (The time that the crash occurred)
+crash_id (Crash ID number)\
+crash_date (The day that the crash occurred)\
+crash_time (The time that the crash occurred)\
 **Data about the location of the crash. This information will give us insight on whether a specific location is more accident prone so we can deduct reasons why.**
   location_borough (the area in NYC where the collision occurred)
   location_street (the street where the collision occurred)
