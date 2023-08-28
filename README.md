@@ -7,10 +7,12 @@ Our project aims to create a relational database on motor vehicle collisions bas
 There are many various groups that will be able to utilize our created database with specific goals in mind. For example, law enforcement agencies, such as NYPD, would be able to use the database in order to monitor and analyze traffic-related incidents to improve overall traffic safety and help create a better understanding of factors contributing to accidents which can also mitigate risks. Another group that would be able to use the database would be traffic engineers and urban planners. This group would be able to utilize the database to assess the effectiveness of existing traffic control measures and improve road infrastructure. Even groups such as the media and the general public will be able to utilize the database in order to increase awareness about traffic accidents through a better understanding of traffic patterns and even for educational purposes.
 
 # Potential Entities/Tables:
--Data that identifies the crash. This will be our main table which will help keep track of information about a specific crash together.
-  crash_id (Crash ID number)
-  crash_date (The day that the crash occurred)
-  crash_time (The time that the crash occurred)
+Data that identifies the crash. This will be our main table which will help keep track of information about a specific crash together.
+crash_id (Crash ID number)
+crash_date (The day that the crash occurred)
+crash_time (The time that the crash occurred)
+
+
 -Data about the location of the crash. This information will give us insight on whether a specific location is more accident prone so we can deduct reasons why.
   location_borough (the area in NYC where the collision occurred)
   location_street (the street where the collision occurred)
