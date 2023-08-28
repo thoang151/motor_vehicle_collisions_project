@@ -17,22 +17,27 @@ crash_time (The time that the crash occurred) \
   location_street (the street where the collision occurred) \
   location_cross_street (the street perpendicular to the first street listed) \
   location_zipcode (zip code of the crash) \
+<br/>
 **Data about the car that made the report. This information will tell us what type of car was involved in the crash.** \
   car_id (Car ID number to identify the specific car involved in the crash) \
   car_make (what type of car it was) \
   car_year (what year the car was manufactured) \
   car_state (the state in which the vehicle was registered in) \
   car_people (how many people were in the car) \
+<br/>
 **Data about the driver. This information will be useful in finding patterns about who operates the vehicles that were involved in crashes.** \
   driver_sex (What the driver chooses to identify as) \
   driver_license_status (Whether they are licenced or not) \
   drivers_license_jurisdiction (The state that the driver is licenced in) \
+<br/>
 **Data about the damage that the vehicle sustained. This information will give us insight on how serious the crash was whether it was on the more damaged side or if it is a small dent.** \
   vehicle_damage (all the damage taken from the collision) \
   vehicle_point_of_impact (the initial point of contact between the cars) \
+<br/>
 **Data about how many people were hurt in the collision. This will include deaths if there were any.** \
   people_injured (number of people who got injured) \
   people_deaths (number of people who died) \
+<br/>
 **Data about what might have caused the crash.**\
   contributing_factor (what the driver or passengers were doing that might have caused a crash) \
   pre_crash (what the vehicle was doing before the crash) \
