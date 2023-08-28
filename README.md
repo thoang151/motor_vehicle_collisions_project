@@ -23,42 +23,41 @@ crash_time (The time that the crash occurred) \
   car_state (the state in which the vehicle was registered in) \
   car_people (how many people were in the car) \
 **Data about the driver. This information will be useful in finding patterns about who operates the vehicles that were involved in crashes.** \
-  driver_sex (What the driver chooses to identify as)
-  driver_license_status (Whether they are licenced or not)
-  drivers_license_jurisdiction (The state that the driver is licenced in)
-**Data about the damage that the vehicle sustained. This information will give us insight on how serious the crash was whether it was on the more damaged side or if it is a small dent.**
-  vehicle_damage (all the damage taken from the collision)
-  vehicle_point_of_impact (the initial point of contact between the cars)
-  Data about how many people were hurt in the collision. This will include deaths if there were any.
-  people_injured (number of people who got injured)
-  people_deaths (number of people who died)
-**Data about what might have caused the crash.**
-  contributing_factor (what the driver or passengers were doing that might have caused a crash)
-  pre_crash (what the vehicle was doing before the crash)
+  driver_sex (What the driver chooses to identify as) \
+  driver_license_status (Whether they are licenced or not) \
+  drivers_license_jurisdiction (The state that the driver is licenced in) \
+**Data about the damage that the vehicle sustained. This information will give us insight on how serious the crash was whether it was on the more damaged side or if it is a small dent.** \
+  vehicle_damage (all the damage taken from the collision) \
+  vehicle_point_of_impact (the initial point of contact between the cars) \
+  Data about how many people were hurt in the collision. This will include deaths if there were any. \
+  people_injured (number of people who got injured) \
+  people_deaths (number of people who died) \
+**Data about what might have caused the crash.** \
+  contributing_factor (what the driver or passengers were doing that might have caused a crash) \
+  pre_crash (what the vehicle was doing before the crash) \
 
 # Entities/Tables that will not be Included:
-**“Public property damage type” will not be included.**
-From scrolling through a few thousand rows, I noticed that there are almost none that have this column filled out, and even if they were filled out this is just extra information that won’t help our database provide what we want it to.
-The same goes for “Public property damage”. I also noticed that the great majority of rows have it filled with ‘N’ or have it blank, so it seems like public property damage isn’t an issue, and it’s not one of the agendas our database will be working on.
-**Travel direction will be left out. I’m sure it’s a useful point of data in other studies, but not in our database. Knowing if a car was traveling north or south isn’t useful for determining patterns because traveling a certain direction doesn’t impose any harm on its own.**
-  As stated in the introduction, we’re only including data from 2012 to 2020. 
-  We’ll likely exclude any rows that have 16/25 of its columns empty, since they don’t give any useful information other than “there was a crash somewhere”.
+**“Public property damage type” will not be included.** \
+From scrolling through a few thousand rows, I noticed that there are almost none that have this column filled out, and even if they were filled out this is just extra information that won’t help our database provide what we want it to. The same goes for “Public property damage”. I also noticed that the great majority of rows have it filled with ‘N’ or have it blank, so it seems like public property damage isn’t an issue, and it’s not one of the agendas our database will be working on. \
+**Travel direction will be left out. I’m sure it’s a useful point of data in other studies, but not in our database. Knowing if a car was traveling north or south isn’t useful for determining patterns because traveling a certain direction doesn’t impose any harm on its own.** \
+As stated in the introduction, we’re only including data from 2012 to 2020. 
+We’ll likely exclude any rows that have 16/25 of its columns empty, since they don’t give any useful information other than “there was a crash somewhere”.
 
 # Sample Data:
-	As our topic is listed as one of the three main topics we are allowed to choose from for the summer session of this class, we are using the data set provided on Canvas to survey the information about vehicle collisions. The URL to the list of topics as well as the download link for the database itself is https://umd.instructure.com/courses/1346198/pages/project-topic-areas. However, as this dataset is incredibly large and not yet normalized, it is highly unlikely and rather ineffective to include every single column within the database, and as such we will be filtering and normalizing the data based on the essential pieces of information first. For example, including vehicle and collision information within the database is an absolute must, while extraneous information such as vehicle travel direction can be left out. A more detailed description on what tables we plan to include within the database can be found in the potential tables section of the proposal.
+As our topic is listed as one of the three main topics we are allowed to choose from for the summer session of this class, we are using the data set provided on Canvas to survey the information about vehicle collisions. The URL to the list of topics as well as the download link for the database itself is https://umd.instructure.com/courses/1346198/pages/project-topic-areas. However, as this dataset is incredibly large and not yet normalized, it is highly unlikely and rather ineffective to include every single column within the database, and as such we will be filtering and normalizing the data based on the essential pieces of information first. For example, including vehicle and collision information within the database is an absolute must, while extraneous information such as vehicle travel direction can be left out. A more detailed description on what tables we plan to include within the database can be found in the potential tables section of the proposal.
 
 # Questions that the database will answer:
-Some questions our database will be able to answer include, but are not limited to: 
--What are the leading causes of motor vehicle collisions?
--Which vehicle types (make and model) are the most pertinent in motor vehicle collisions?
--Is there a certain time frame where collisions are more likely to occur?
--Is it possible that collisions are more likely to occur at a specific time of year?
--Are older vehicles more prone to collisions than newer vehicles?
--Does the amount of occupants or passengers inside the vehicle affect the likelihood of a collision?
--Does the gender of the driver play a role in the likelihood of collisions?
--Is it possible that license registration of the driver can play a role in defining the cause of vehicle collisions?
--Are vehicles involved in collisions more likely to be hit when stationary or already moving?
--What does the vehicle damage tell us about the nature of the collision?
+**Some questions our database will be able to answer include, but are not limited to:** \
+What are the leading causes of motor vehicle collisions? \
+Which vehicle types (make and model) are the most pertinent in motor vehicle collisions? \
+Is there a certain time frame where collisions are more likely to occur? \
+Is it possible that collisions are more likely to occur at a specific time of year? \
+Are older vehicles more prone to collisions than newer vehicles? \
+Does the amount of occupants or passengers inside the vehicle affect the likelihood of a collision? \
+Does the gender of the driver play a role in the likelihood of collisions? \
+Is it possible that license registration of the driver can play a role in defining the cause of vehicle collisions? \
+Are vehicles involved in collisions more likely to be hit when stationary or already moving? \
+What does the vehicle damage tell us about the nature of the collision? \
 
 # Diversity, Equity, and Inclusion Considerations:
 	Our database design and sample data plan to be inclusive because it will come from resources that will not involve any biases. As we are collecting data from key attributes, we are looking at features such as location, car makes, etc. We are looking at a dataset that spans from 2012 to 2020 to ensure that the data that we are using is large enough to provide accurate insights into what we are looking for in motor vehicle collisions. In terms of diversity, we are also looking at making sure our data model includes different types of categories involved in the motor vehicle collisions such as pedestrians, cyclists, trucks, and much more. Factors such as gender, race, etc. will also affect traffic safety and traffic collision patterns. With equity, we’ll also be looking at the location and we understand that different locations have a variety of policing practices. Some locations have strict enforcements while others may have less, so we will make sure to look at that and create efforts to validate the reported data.
