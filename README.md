@@ -11,18 +11,18 @@ There are many various groups that will be able to utilize our created database 
 crash_id (Crash ID number) \
 crash_date (The day that the crash occurred) \
 crash_time (The time that the crash occurred) \
-**Data about the location of the crash. This information will give us insight on whether a specific location is more accident prone so we can deduct reasons why.**
-  location_borough (the area in NYC where the collision occurred)
-  location_street (the street where the collision occurred)
-  location_cross_street (the street perpendicular to the first street listed)
-  location_zipcode (zip code of the crash)
-**Data about the car that made the report. This information will tell us what type of car was involved in the crash.**
-  car_id (Car ID number to identify the specific car involved in the crash)
-  car_make (what type of car it was)
-  car_year (what year the car was manufactured)
-  car_state (the state in which the vehicle was registered in)
-  car_people (how many people were in the car)
-**Data about the driver. This information will be useful in finding patterns about who operates the vehicles that were involved in crashes.**
+**Data about the location of the crash. This information will give us insight on whether a specific location is more accident prone so we can deduct reasons why.**\
+  location_borough (the area in NYC where the collision occurred) \
+  location_street (the street where the collision occurred) \
+  location_cross_street (the street perpendicular to the first street listed) \
+  location_zipcode (zip code of the crash) \
+**Data about the car that made the report. This information will tell us what type of car was involved in the crash.** \
+  car_id (Car ID number to identify the specific car involved in the crash) \
+  car_make (what type of car it was) \
+  car_year (what year the car was manufactured) \
+  car_state (the state in which the vehicle was registered in) \
+  car_people (how many people were in the car) \
+**Data about the driver. This information will be useful in finding patterns about who operates the vehicles that were involved in crashes.** \
   driver_sex (What the driver chooses to identify as)
   driver_license_status (Whether they are licenced or not)
   drivers_license_jurisdiction (The state that the driver is licenced in)
