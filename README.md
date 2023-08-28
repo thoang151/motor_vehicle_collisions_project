@@ -29,7 +29,7 @@ crash_time (The time that the crash occurred) \
 **Data about the damage that the vehicle sustained. This information will give us insight on how serious the crash was whether it was on the more damaged side or if it is a small dent.** \
   vehicle_damage (all the damage taken from the collision) \
   vehicle_point_of_impact (the initial point of contact between the cars) \
-  Data about how many people were hurt in the collision. This will include deaths if there were any. \
+**Data about how many people were hurt in the collision. This will include deaths if there were any.** \
   people_injured (number of people who got injured) \
   people_deaths (number of people who died) \
 **Data about what might have caused the crash.**\
