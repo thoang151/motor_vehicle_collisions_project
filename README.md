@@ -32,7 +32,7 @@ crash_time (The time that the crash occurred) \
   Data about how many people were hurt in the collision. This will include deaths if there were any. \
   people_injured (number of people who got injured) \
   people_deaths (number of people who died) \
-**Data about what might have caused the crash.** \
+**Data about what might have caused the crash.**\
   contributing_factor (what the driver or passengers were doing that might have caused a crash) \
   pre_crash (what the vehicle was doing before the crash) \
 
