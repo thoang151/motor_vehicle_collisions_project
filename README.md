@@ -7,42 +7,40 @@ Our project aims to create a relational database on motor vehicle collisions bas
 There are many various groups that will be able to utilize our created database with specific goals in mind. For example, law enforcement agencies, such as NYPD, would be able to use the database in order to monitor and analyze traffic-related incidents to improve overall traffic safety and help create a better understanding of factors contributing to accidents which can also mitigate risks. Another group that would be able to use the database would be traffic engineers and urban planners. This group would be able to utilize the database to assess the effectiveness of existing traffic control measures and improve road infrastructure. Even groups such as the media and the general public will be able to utilize the database in order to increase awareness about traffic accidents through a better understanding of traffic patterns and even for educational purposes.
 
 # Potential Entities/Tables:
-Data that identifies the crash. This will be our main table which will help keep track of information about a specific crash together.
+**Data that identifies the crash. This will be our main table which will help keep track of information about a specific crash together.**\
 crash_id (Crash ID number)
 crash_date (The day that the crash occurred)
 crash_time (The time that the crash occurred)
-
-
--Data about the location of the crash. This information will give us insight on whether a specific location is more accident prone so we can deduct reasons why.
+**Data about the location of the crash. This information will give us insight on whether a specific location is more accident prone so we can deduct reasons why.**
   location_borough (the area in NYC where the collision occurred)
   location_street (the street where the collision occurred)
   location_cross_street (the street perpendicular to the first street listed)
   location_zipcode (zip code of the crash)
--Data about the car that made the report. This information will tell us what type of car was involved in the crash.
+**Data about the car that made the report. This information will tell us what type of car was involved in the crash.**
   car_id (Car ID number to identify the specific car involved in the crash)
   car_make (what type of car it was)
   car_year (what year the car was manufactured)
   car_state (the state in which the vehicle was registered in)
   car_people (how many people were in the car)
--Data about the driver. This information will be useful in finding patterns about who operates the vehicles that were involved in crashes.
+**Data about the driver. This information will be useful in finding patterns about who operates the vehicles that were involved in crashes.**
   driver_sex (What the driver chooses to identify as)
   driver_license_status (Whether they are licenced or not)
   drivers_license_jurisdiction (The state that the driver is licenced in)
--Data about the damage that the vehicle sustained. This information will give us insight on how serious the crash was whether it was on the more damaged side or if it is a small dent.
+**Data about the damage that the vehicle sustained. This information will give us insight on how serious the crash was whether it was on the more damaged side or if it is a small dent.**
   vehicle_damage (all the damage taken from the collision)
   vehicle_point_of_impact (the initial point of contact between the cars)
   Data about how many people were hurt in the collision. This will include deaths if there were any.
   people_injured (number of people who got injured)
   people_deaths (number of people who died)
--Data about what might have caused the crash.
+**Data about what might have caused the crash.**
   contributing_factor (what the driver or passengers were doing that might have caused a crash)
   pre_crash (what the vehicle was doing before the crash)
 
 # Entities/Tables that will not be Included:
--“Public property damage type” will not be included.
-  From scrolling through a few thousand rows, I noticed that there are almost none that have this column filled out, and even if they were filled out this is just extra information that won’t help      our database provide what we want it to.
-  The same goes for “Public property damage”. I also noticed that the great majority of rows have it filled with ‘N’ or have it blank, so it seems like public property damage isn’t an issue, and it’s    not one of the agendas our database will be working on.
--Travel direction will be left out. I’m sure it’s a useful point of data in other studies, but not in our database. Knowing if a car was traveling north or south isn’t useful for determining patterns    because traveling a certain direction doesn’t impose any harm on its own. 
+**“Public property damage type” will not be included.**
+From scrolling through a few thousand rows, I noticed that there are almost none that have this column filled out, and even if they were filled out this is just extra information that won’t help our database provide what we want it to.
+The same goes for “Public property damage”. I also noticed that the great majority of rows have it filled with ‘N’ or have it blank, so it seems like public property damage isn’t an issue, and it’s not one of the agendas our database will be working on.
+**Travel direction will be left out. I’m sure it’s a useful point of data in other studies, but not in our database. Knowing if a car was traveling north or south isn’t useful for determining patterns because traveling a certain direction doesn’t impose any harm on its own.**
   As stated in the introduction, we’re only including data from 2012 to 2020. 
   We’ll likely exclude any rows that have 16/25 of its columns empty, since they don’t give any useful information other than “there was a crash somewhere”.
 
@@ -50,7 +48,7 @@ crash_time (The time that the crash occurred)
 	As our topic is listed as one of the three main topics we are allowed to choose from for the summer session of this class, we are using the data set provided on Canvas to survey the information about vehicle collisions. The URL to the list of topics as well as the download link for the database itself is https://umd.instructure.com/courses/1346198/pages/project-topic-areas. However, as this dataset is incredibly large and not yet normalized, it is highly unlikely and rather ineffective to include every single column within the database, and as such we will be filtering and normalizing the data based on the essential pieces of information first. For example, including vehicle and collision information within the database is an absolute must, while extraneous information such as vehicle travel direction can be left out. A more detailed description on what tables we plan to include within the database can be found in the potential tables section of the proposal.
 
 # Questions that the database will answer:
-	Some questions our database will be able to answer include, but are not limited to: 
+Some questions our database will be able to answer include, but are not limited to: 
 -What are the leading causes of motor vehicle collisions?
 -Which vehicle types (make and model) are the most pertinent in motor vehicle collisions?
 -Is there a certain time frame where collisions are more likely to occur?
