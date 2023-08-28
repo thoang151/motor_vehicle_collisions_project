@@ -55,14 +55,23 @@ As our topic is listed as one of the three main topics we are allowed to choose 
 # Questions that the database will answer:
 **Some questions our database will be able to answer include, but are not limited to:** \
 What are the leading causes of motor vehicle collisions? \
+<br/>
 Which vehicle types (make and model) are the most pertinent in motor vehicle collisions? \
+<br/>
 Is there a certain time frame where collisions are more likely to occur? \
+<br/>
 Is it possible that collisions are more likely to occur at a specific time of year? \
+<br/>
 Are older vehicles more prone to collisions than newer vehicles? \
+<br/>
 Does the amount of occupants or passengers inside the vehicle affect the likelihood of a collision? \
+<br/>
 Does the gender of the driver play a role in the likelihood of collisions? \
+<br/>
 Is it possible that license registration of the driver can play a role in defining the cause of vehicle collisions? \
+<br/>
 Are vehicles involved in collisions more likely to be hit when stationary or already moving? \
+<br/>
 What does the vehicle damage tell us about the nature of the collision?
 
 # Diversity, Equity, and Inclusion Considerations:
